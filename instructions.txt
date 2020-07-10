@@ -1,0 +1,7 @@
+1) rename TxtInput ==>  TxtMyInput		Ctrl (R R)
+	- confirm code and Design Form
+
+2) rename quartic  ==>  thirdPower		Ctrl (R R)
+	- confirm code
+
+3)
