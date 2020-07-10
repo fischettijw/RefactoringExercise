@@ -12,6 +12,7 @@ namespace RefactoringExercise
 {
     public partial class FrmRefactoring : Form
     {
+
         public FrmRefactoring()
         {
             InitializeComponent();
