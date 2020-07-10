@@ -50,5 +50,20 @@ namespace RefactoringExercise
             TxtNum03.Text = "";
             TxtNum04.Text = "";
         }
+
+        private void Btn02_Click(object sender, EventArgs e)
+        {
+            int num = int.Parse(TxtInput.Text);
+
+            int square = num + num;
+            int cube = num + num + num;
+            int quartic = num + num + num + num;
+            int sum = square + cube + quartic;
+
+            TxtNum01.Text = square.ToString();
+            TxtNum02.Text = cube.ToString();
+            TxtNum03.Text = quartic.ToString();
+            TxtNum04.Text = sum.ToString();
+        }
     }
 }

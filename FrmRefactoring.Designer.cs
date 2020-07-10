@@ -90,6 +90,7 @@
             this.Btn02.TabIndex = 5;
             this.Btn02.Text = "Click 2";
             this.Btn02.UseVisualStyleBackColor = true;
+            this.Btn02.Click += new System.EventHandler(this.Btn02_Click);
             // 
             // Btn03
             // 
