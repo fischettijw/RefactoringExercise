@@ -36,11 +36,13 @@
             this.Btn02 = new System.Windows.Forms.Button();
             this.Btn03 = new System.Windows.Forms.Button();
             this.Btn04 = new System.Windows.Forms.Button();
+            this.TxtInput = new System.Windows.Forms.TextBox();
+            this.BtnClear = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // TxtNum01
             // 
-            this.TxtNum01.Location = new System.Drawing.Point(52, 58);
+            this.TxtNum01.Location = new System.Drawing.Point(52, 69);
             this.TxtNum01.Name = "TxtNum01";
             this.TxtNum01.Size = new System.Drawing.Size(100, 29);
             this.TxtNum01.TabIndex = 0;
@@ -48,7 +50,7 @@
             // 
             // TxtNum02
             // 
-            this.TxtNum02.Location = new System.Drawing.Point(206, 58);
+            this.TxtNum02.Location = new System.Drawing.Point(206, 69);
             this.TxtNum02.Name = "TxtNum02";
             this.TxtNum02.Size = new System.Drawing.Size(100, 29);
             this.TxtNum02.TabIndex = 1;
@@ -56,7 +58,7 @@
             // 
             // TxtNum03
             // 
-            this.TxtNum03.Location = new System.Drawing.Point(360, 58);
+            this.TxtNum03.Location = new System.Drawing.Point(360, 69);
             this.TxtNum03.Name = "TxtNum03";
             this.TxtNum03.Size = new System.Drawing.Size(100, 29);
             this.TxtNum03.TabIndex = 2;
@@ -64,7 +66,7 @@
             // 
             // TxtNum04
             // 
-            this.TxtNum04.Location = new System.Drawing.Point(514, 58);
+            this.TxtNum04.Location = new System.Drawing.Point(514, 69);
             this.TxtNum04.Name = "TxtNum04";
             this.TxtNum04.Size = new System.Drawing.Size(100, 29);
             this.TxtNum04.TabIndex = 3;
@@ -72,16 +74,17 @@
             // 
             // Btn01
             // 
-            this.Btn01.Location = new System.Drawing.Point(52, 114);
+            this.Btn01.Location = new System.Drawing.Point(52, 125);
             this.Btn01.Name = "Btn01";
             this.Btn01.Size = new System.Drawing.Size(100, 29);
             this.Btn01.TabIndex = 4;
             this.Btn01.Text = "Click 1";
             this.Btn01.UseVisualStyleBackColor = true;
+            this.Btn01.Click += new System.EventHandler(this.Btn01_Click);
             // 
             // Btn02
             // 
-            this.Btn02.Location = new System.Drawing.Point(206, 114);
+            this.Btn02.Location = new System.Drawing.Point(206, 125);
             this.Btn02.Name = "Btn02";
             this.Btn02.Size = new System.Drawing.Size(100, 29);
             this.Btn02.TabIndex = 5;
@@ -90,7 +93,7 @@
             // 
             // Btn03
             // 
-            this.Btn03.Location = new System.Drawing.Point(360, 114);
+            this.Btn03.Location = new System.Drawing.Point(360, 125);
             this.Btn03.Name = "Btn03";
             this.Btn03.Size = new System.Drawing.Size(100, 29);
             this.Btn03.TabIndex = 6;
@@ -99,18 +102,38 @@
             // 
             // Btn04
             // 
-            this.Btn04.Location = new System.Drawing.Point(514, 114);
+            this.Btn04.Location = new System.Drawing.Point(514, 125);
             this.Btn04.Name = "Btn04";
             this.Btn04.Size = new System.Drawing.Size(100, 29);
             this.Btn04.TabIndex = 7;
             this.Btn04.Text = "Click 4";
             this.Btn04.UseVisualStyleBackColor = true;
             // 
+            // TxtInput
+            // 
+            this.TxtInput.Location = new System.Drawing.Point(285, 15);
+            this.TxtInput.Name = "TxtInput";
+            this.TxtInput.Size = new System.Drawing.Size(100, 29);
+            this.TxtInput.TabIndex = 8;
+            this.TxtInput.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // BtnClear
+            // 
+            this.BtnClear.Location = new System.Drawing.Point(285, 179);
+            this.BtnClear.Name = "BtnClear";
+            this.BtnClear.Size = new System.Drawing.Size(100, 29);
+            this.BtnClear.TabIndex = 9;
+            this.BtnClear.Text = "Clear";
+            this.BtnClear.UseVisualStyleBackColor = true;
+            this.BtnClear.Click += new System.EventHandler(this.BtnClear_Click);
+            // 
             // FrmRefactoring
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(675, 387);
+            this.Controls.Add(this.BtnClear);
+            this.Controls.Add(this.TxtInput);
             this.Controls.Add(this.Btn04);
             this.Controls.Add(this.Btn03);
             this.Controls.Add(this.Btn02);
@@ -139,6 +162,8 @@
         private System.Windows.Forms.Button Btn02;
         private System.Windows.Forms.Button Btn03;
         private System.Windows.Forms.Button Btn04;
+        private System.Windows.Forms.TextBox TxtInput;
+        private System.Windows.Forms.Button BtnClear;
     }
 }
 
