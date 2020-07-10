@@ -16,5 +16,13 @@ namespace RefactoringExercise
         {
             InitializeComponent();
         }
+
+        private void FrmRefactoring_Load(object sender, EventArgs e)
+        {
+            TxtNum01.Text = "";
+            TxtNum02.Text = "";
+            TxtNum03.Text = "";
+            TxtNum04.Text = "";
+        }
     }
 }
