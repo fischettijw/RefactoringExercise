@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-
 namespace RefactoringExercise
 {
     public partial class FrmRefactoring : Form
